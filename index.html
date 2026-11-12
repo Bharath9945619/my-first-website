@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPLFT.CO | Creative Digital Agency</title>
+
+    <style>
+        /* Basic website styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0f0d;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            border-bottom: 1px solid #26352c;
+        }
+
+        .logo {
+            color: #39e879;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #39e879;
+        }
+
+        /* Main section */
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 10%;
+        }
+
+        .hero span {
+            color: #39e879;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 75px);
+            line-height: 1.1;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            color: #b5c0b8;
+            max-width: 550px;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #39e879;
+            color: #071009;
+            padding: 14px 28px;
+            margin-top: 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        /* Services section */
+        .services {
+            padding: 75px 10%;
+            background: #121a15;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .service {
+            padding: 28px;
+            background: #1b2920;
+            border: 1px solid #304637;
+            border-radius: 10px;
+        }
+
+        .service h3 {
+            color: #39e879;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: #b5c0b8;
+        }
+
+        /* About section */
+        .about {
+            padding: 80px 10%;
+        }
+
+        .about h2 {
+            color: #39e879;
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            max-width: 650px;
+            color: #b5c0b8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #26352c;
+            color: #9ca9a0;
+        }
+
+        /* Mobile navigation */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">UPLFT.CO</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+    <section class="hero" id="home">
+        <span>CREATIVE DIGITAL AGENCY</span>
+
+        <h1>We Build Brands.<br>
+        We Create Growth.</h1>
+
+        <p>
+            Helping businesses grow through creative content,
+            digital marketing, branding and smart strategies.
+        </p>
+
+        <a href="#services" class="button">Explore Our Services →</a>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>What We Do</h2>
+
+        <div class="service-grid">
+
+            <div class="service">
+                <h3>01. Digital Marketing</h3>
+                <p>Helping brands reach the right audience online.</p>
+            </div>
+
+            <div class="service">
+                <h3>02. Video Production</h3>
+                <p>Creating engaging videos and visual stories.</p>
+            </div>
+
+            <div class="service">
+                <h3>03. Social Media</h3>
+                <p>Building strong and consistent online identities.</p>
+            </div>
+
+            <div class="service">
+                <h3>04. Website Design</h3>
+                <p>Creating modern websites for growing businesses.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About UPLFT.CO</h2>
+
+        <p>
+            We are a creative team passionate about helping
+            businesses improve their visibility, build their
+            identity and achieve digital growth.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 UPLFT.CO. All rights reserved.
+    </footer>
+
+</body>
+</html>
